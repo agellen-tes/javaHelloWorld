@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories{ 
+    mavenCentral() 
+}
+
+configurations{
+    myConfig
+}
+
+dependencies {
+    implementation "joda-time:joda-time:2.2"
+    testImplementation "junit:junit:4.12"
+    myConfig "joda-time:joda-time:2.2"
+}
+
+jar{
+    archiveBaseName = 'helloWorld-JavaArchive'
+    archiveVersion =  '0.1'
+    manifest.attributes "Main-Class": "hello.HelloWorld"
+    from configurations.myConfig.collect{zipTree it} // add dependecy class to jar
+}
