@@ -3,10 +3,10 @@ trigger:
 
 pool: aron-devops
 
-container: adoptopenjdk:latest 
+#container: adoptopenjdk:latest 
 
 steps:
-- script: which bash 
+- script: which docker 
   displayName: 'Command line'
 
 
