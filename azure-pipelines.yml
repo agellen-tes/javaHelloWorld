@@ -3,6 +3,8 @@ trigger:
 
 pool: aron-devops
 
+container: adoptopenjdk:latest 
+
 steps:
 - script: which bash 
   displayName: 'Command line'
