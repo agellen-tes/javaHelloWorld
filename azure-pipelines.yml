@@ -6,7 +6,7 @@ pool: aron-devops
 #container: adoptopenjdk:latest 
 
 steps:
-- script: which docker 
+- script: which docker
   displayName: 'Command line'
 
 
