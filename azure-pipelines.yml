@@ -1,4 +1,5 @@
 trigger:
+# - none # triggered manually
 - main
 
 pool: agellenVmssGradle01
@@ -8,7 +9,6 @@ pool: agellenVmssGradle01
 steps:
 - script: which java 
   displayName: 'Command line'
-
 
 # # Starter pipeline
 # - task: Gradle@3
