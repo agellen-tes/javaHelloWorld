@@ -1,12 +1,12 @@
 trigger:
 - main
 
-pool: aron-devops
+pool: agellenVmssGradle01
 
 #container: adoptopenjdk:latest 
 
 steps:
-- script: which docker
+- script: which java 
   displayName: 'Command line'
 
 
